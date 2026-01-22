@@ -305,7 +305,7 @@ export default function Sidebar() {
               <p className="text-sm font-medium text-[var(--text-primary)] truncate">
                 {user?.email?.split('@')[0] || 'Demo User'}
               </p>
-              <p className="text-[11px] text-[var(--text-muted)]">Free Plan</p>
+              <p className="text-[11px] text-[var(--text-muted)]">Member</p>
             </div>
           )}
           

@@ -101,7 +101,7 @@ export default function HomePage() {
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
               <Link href="/signup" className="btn-primary text-lg px-8 py-4 flex items-center gap-2">
                 <Sparkles size={20} />
-                Start Free
+                Get Started
                 <ArrowRight size={20} />
               </Link>
               <Link href="/agents" className="btn-secondary text-lg px-8 py-4 flex items-center gap-2">
@@ -262,18 +262,18 @@ export default function HomePage() {
               </p>
               <Link href="/signup" className="btn-primary text-lg px-8 py-4 inline-flex items-center gap-2">
                 <Sparkles size={20} />
-                Get Started Free
+                Get Started
                 <ArrowRight size={20} />
               </Link>
               
               <div className="mt-8 flex items-center justify-center gap-6 text-sm text-[var(--text-muted)]">
                 <span className="flex items-center gap-2">
                   <CheckCircle size={16} className="text-green-400" />
-                  Free to start
+                  Instant access
                 </span>
                 <span className="flex items-center gap-2">
                   <CheckCircle size={16} className="text-green-400" />
-                  No credit card required
+                  84+ AI agents
                 </span>
                 <span className="flex items-center gap-2">
                   <CheckCircle size={16} className="text-green-400" />
