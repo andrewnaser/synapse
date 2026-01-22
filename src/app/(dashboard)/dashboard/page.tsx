@@ -63,7 +63,7 @@ const Icons = {
 const categories = [
   { id: 'writing', name: 'Writing', emoji: '✍️', count: agents.filter(a => a.category === 'writing').length },
   { id: 'marketing', name: 'Marketing', emoji: '📣', count: agents.filter(a => a.category === 'marketing').length },
-  { id: 'social', name: 'Social Media', emoji: '📱', count: agents.filter(a => a.category === 'social').length },
+  { id: 'social-media', name: 'Social Media', emoji: '📱', count: agents.filter(a => a.category === 'social-media').length },
   { id: 'coding', name: 'Coding', emoji: '💻', count: agents.filter(a => a.category === 'coding').length },
   { id: 'business', name: 'Business', emoji: '💼', count: agents.filter(a => a.category === 'business').length },
   { id: 'creative', name: 'Creative', emoji: '🎨', count: agents.filter(a => a.category === 'creative').length },

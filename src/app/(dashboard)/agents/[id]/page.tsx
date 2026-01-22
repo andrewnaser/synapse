@@ -46,7 +46,7 @@ const lengthOptions = ['Brief', 'Standard', 'Detailed', 'Comprehensive'];
 
 export default function AgentPage() {
   const params = useParams();
-  const { addOutput, incrementTasks } = useStore();
+  const { addOutput, incrementTasksCompleted } = useStore();
   
   const agent = agents.find((a) => a.id === params.id);
   
@@ -146,7 +146,7 @@ Preferences:
       }
 
       setOutput(data.output);
-      incrementTasks();
+      incrementTasksCompleted();
     } catch (err) {
       console.error('Generation error:', err);
       setError(err instanceof Error ? err.message : 'An error occurred during generation');
@@ -164,11 +164,13 @@ Preferences:
   const handleSave = () => {
     addOutput({
       id: Date.now().toString(),
-      agentId: agent.id,
-      agentName: agent.name,
+      user_id: '',
+      agent_id: agent.id,
+      agent_name: agent.name,
+      agent_category: agent.category,
+      input_data: formData,
       content: output,
-      createdAt: new Date().toISOString(),
-      category: agent.category,
+      created_at: new Date().toISOString(),
     });
     setSaved(true);
     setTimeout(() => setSaved(false), 2000);
