@@ -1,6 +1,9 @@
+export type UserType = 'standard' | 'pro'
+
 export interface User {
   id: string
   email: string
+  user_type?: UserType
   unlocked_upsells: string[]
   created_at: string
 }
